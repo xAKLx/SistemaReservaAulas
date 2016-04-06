@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E421484A-27E2-4848-A3EB-92DE979C9600}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAdministrador.Designer.cs">
+      <DependentUpon>AddAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAula.Designer.cs">
+      <DependentUpon>AddAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administradores.Designer.cs">
+      <DependentUpon>Administradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorMain.Designer.cs">
+      <DependentUpon>AdministradorMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsignarAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarAula.Designer.cs">
+      <DependentUpon>AsignarAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aulas.Designer.cs">
+      <DependentUpon>Aulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarPass.Designer.cs">
+      <DependentUpon>CambiarPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarAula.Designer.cs">
+      <DependentUpon>EditarAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarAdministrador.Designer.cs">
+      <DependentUpon>EliminarAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstudianteProfesorMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstudianteProfesorMain.Designer.cs">
+      <DependentUpon>EstudianteProfesorMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HorarioGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HorarioGrupo.Designer.cs">
+      <DependentUpon>HorarioGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteHorariosGruposConAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteHorariosGruposConAula.Designer.cs">
+      <DependentUpon>ReporteHorariosGruposConAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SistemaReservasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaReservasDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAdministrador.resx">
+      <DependentUpon>AddAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAula.resx">
+      <DependentUpon>AddAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administradores.resx">
+      <DependentUpon>Administradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorMain.resx">
+      <DependentUpon>AdministradorMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignarAula.resx">
+      <DependentUpon>AsignarAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aulas.resx">
+      <DependentUpon>Aulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarPass.resx">
+      <DependentUpon>CambiarPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarAula.resx">
+      <DependentUpon>EditarAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAdministrador.resx">
+      <DependentUpon>EliminarAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstudianteProfesorMain.resx">
+      <DependentUpon>EstudianteProfesorMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HorarioGrupo.resx">
+      <DependentUpon>HorarioGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReporteHorariosGruposConAula.resx">
+      <DependentUpon>ReporteHorariosGruposConAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SistemaReservasDataSet.xsc">
+      <DependentUpon>SistemaReservasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SistemaReservasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SistemaReservasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SistemaReservasDataSet.xss">
+      <DependentUpon>SistemaReservasDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{c3e21c9d-b9c5-4262-8126-056e265a4cfb}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
